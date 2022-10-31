@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "commit": "git add . &&git-cz"
+    "commit": "git add . && git cz && git push"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
