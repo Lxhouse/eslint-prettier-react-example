@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git add . &&git-cz"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
@@ -16,13 +16,14 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-customizable"
     }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.0.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
